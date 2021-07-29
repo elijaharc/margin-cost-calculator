@@ -1,22 +1,22 @@
 // Calculation logic here
 
-let risked_amount_result = document.getElementById("risked-amount");
-let trade_amount_result = document.getElementById("trade-size");
-let margin_cost_result = document.getElementById("margin-cost");
+const risked_amount_result = document.getElementById("risked-amount");
+const trade_amount_result = document.getElementById("trade-size");
+const margin_cost_result = document.getElementById("margin-cost");
 
 $("form").submit(function (e) {
+  // gets values
   let accountSize = parseFloat($("#accountSize").val());
   let leverage = parseFloat($("#leverage").val());
   let riskRatio = parseFloat($("#riskRatio").val()) / 100;
   let stopLoss = parseFloat($("#stopLoss").val()) / 100;
 
+  // form logic
   let riskedAmount = accountSize * riskRatio;
   let tradeSize = riskedAmount / stopLoss;
   let marginCost = tradeSize / leverage;
-  console.log("Risked Amount:", riskedAmount);
-  console.log("Trade Size:", tradeSize);
-  console.log("Margin Cost:", marginCost);
 
+  // displays result
   $("#result-display").removeAttr("style");
   risked_amount_result.innerHTML = `Risked Amount ($): ${parseFloat(
     riskedAmount
@@ -28,5 +28,6 @@ $("form").submit(function (e) {
     marginCost
   ).toFixed(2)}`;
 
+  // prevents page refresh
   e.preventDefault();
 });
