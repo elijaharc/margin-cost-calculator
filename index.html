@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <title>Margin Cost Calculator</title>
 
     <!-- BOOTSTRAP CSS -->
@@ -17,6 +16,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -26,53 +26,88 @@
       id="mainNavbar"
       class="navbar navbar-expand-sm navbar-light bg-light fixed-top py-1"
     >
-      <a class="navbar-brand mx-3" href="#">margin cost calculator</a>
-      </button>
+      <a class="navbar-brand mx-3" href="#home">margin cost calculator</a>
     </nav>
     <!-- NAVBAR END -->
 
     <!-- MAIN CONTENT HTML START -->
-
-    <div class="card mt-3" id='mainCard'>
+    <div class="card mt-3" id="mainCard">
       <div class="card-body text-center">
-        <form>
+        <form id="calculate">
           <div class="form-group">
             <label class="left" for="accountSize">Account Size</label>
-            <input type="number" class="form-control" id="accountSize" placeholder="Enter account size" step="0.01" required autofocus>
+            <input
+              type="number"
+              class="form-control"
+              id="accountSize"
+              placeholder="Enter account size"
+              step="0.01"
+              required
+              autofocus
+            />
           </div>
           <div class="form-group">
             <label class="left" for="leverage">Leverage</label>
-            <input type="number" class="form-control" id="leverage" placeholder="Enter leverage" required>
+            <input
+              type="number"
+              class="form-control"
+              id="leverage"
+              placeholder="Enter leverage"
+              required
+            />
           </div>
           <div class="form-group">
             <label class="left" for="riskRatio">Risk Ratio %</label>
-            <input type="number" class="form-control" id="riskRatio" placeholder="Enter risk ratio percent" step="0.01" required>
+            <input
+              type="number"
+              class="form-control"
+              id="riskRatio"
+              placeholder="Enter risk ratio percent"
+              step="0.01"
+              required
+            />
           </div>
           <div class="form-group">
             <label class="left" for="stopLoss">Stop Loss %</label>
-            <input type="number" class="form-control" id="stopLoss" placeholder="Enter stop loss percent" step="0.01" required>
-          </div>  
+            <input
+              type="number"
+              class="form-control"
+              id="stopLoss"
+              placeholder="Enter stop loss percent"
+              step="0.01"
+              required
+            />
           </div>
-          <button type="submit" class="font-weight-bold btn mx-3 mb-3" id="submit">Calculate</button>
         </form>
+      </div>
+      <button
+        type="submit"
+        class="font-weight-bold btn mx-3 mb-3"
+        id="submit"
+        form="calculate"
+      >
+        Calculate
+      </button>
 
-        <div class="card border-light" style="display: none" id="result-display">
-          <div class="card-header lead font-weight-bold">Result:</div>
-          <div class="card-body">
-            <p id="risked-amount"></p>
-            <p id="trade-size"></p>
-            <p class="mb-0 font-weight-bold" id="margin-cost"></p>
-          </div>
+      <!-- RESULT START -->
+      <div class="card border-light" style="display: none" id="result-display">
+        <div class="card-header lead font-weight-bold">Result:</div>
+        <div class="card-body">
+          <p id="risked-amount"></p>
+          <p id="trade-size"></p>
+          <p class="mb-0 font-weight-bold" id="margin-cost"></p>
         </div>
       </div>
-      <footer class="text-center mt-3">Elijah Arcedera | &copy; 2021</footer>
+      <!-- RESULT END -->
     </div>
 
-    
+    <!-- FOOTER START -->
+    <footer class="text-center mt-3">Elijah Arcedera | &copy; 2021</footer>
+    <!-- FOOTER END -->
 
     <!-- MAIN CONTENT HTML END -->
 
-    <!-- BOOTSTRAP AND JS -->
+    <!-- BOOTSTRAP AND CUSTOM JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
