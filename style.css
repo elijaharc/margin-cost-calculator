@@ -50,6 +50,11 @@ footer {
   color: #3a75ad;
 }
 
+#footer a:hover {
+  text-decoration: none;
+  color: #235786;
+}
+
 #mainCard {
   max-width: 348px;
   margin-left: auto;
