@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+body,
+html {
+  height: 80%;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  margin: 5rem;
+  margin-top: 2.5rem;
+}
+
+.jumbotron {
+  padding: 1rem;
+}
+
+#main {
+  background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1647&q=80");
+  height: 100%;
+  /* opacity: 0.5; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* START NAV */
+
+#mainNavbar .navbar-brand {
+  font-size: 1.7rem;
+  color: green;
+  font-weight: normal;
+}
+
+#mainNavbar .navbar-brand:hover {
+  color: rgb(0, 87, 0);
+}
+
+#mainNavbar .nav-link {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+
+#navbarNav {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#navbarNav a {
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+}
+
+#navbarNav a:hover {
+  color: rgb(255, 145, 0);
+}
+
+/* END NAV BAR */
+
+.inactive {
+  display: none;
+}
+
+#noResults {
+  margin: auto;
+}
+
+.card {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 250px;
+  padding: 1rem;
+}
+
+#card-body {
+  padding-bottom: 3rem;
+  width: 100%;
+  background-color: none;
+}
+
+#searchInput {
+  width: 10%;
+}
+
+#quoteMain {
+  color: green;
+}
+
+/* CARD RESULTS */
+
+.card {
+  margin: 2rem;
+}
+
+#recipeDisplay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#favoritesDisplay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.addTo {
+  background-color: rgb(240, 182, 74);
+}
+
+.addTo:hover {
+  background-color: rgb(231, 170, 56);
+}
+
+.viewRecipe {
+  background-color: green;
+  color: white;
+}
+
+.viewRecipe:hover {
+  background-color: rgb(5, 110, 5);
+  color: white;
+}
+
+#favoritesHeader h1 {
+  color: orange;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  margin-bottom: 0rem;
+}
+
+.quoteHeader {
+  margin-bottom: 1.4rem;
+}
+
+#noItems {
+  margin-top: 3.3rem;
+}
+
+#aboutUsHeader {
+  font-size: 1.5rem;
+  color: green;
+}
+
+.carousel-caption h1 {
+  font-size: 1.3rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
