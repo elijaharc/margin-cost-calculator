@@ -56,8 +56,12 @@ $("#risk-calculator").submit(function (e) {
   let cutlossPrice = entryPrice - stopLoss * entryPrice;
   if (quantityOfShares * entryPrice > maxAmount) {
     quantityOfShares = maxAmount / entryPrice;
+    $("#result-display").addClass("red-outline");
     console.log("max");
+  } else {
+    $("#result-display").removeClass("red-outline");
   }
+
   let portAllocationPercent =
     ((quantityOfShares * entryPrice) / portfolioAmount) * 100;
 
