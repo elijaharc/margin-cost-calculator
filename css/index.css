@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+body,
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  margin: 1rem;
+  margin-top: 2.2rem;
+}
+
+@media only screen and (min-width: 1260px) {
+  body,
+  html {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  body,
+  html {
+    margin-top: 2.6rem;
+    overflow: visible;
+  }
+}
+
+#result {
+  font-size: normal;
+}
+
+#submit {
+  background-color: #1c6ab3 !important;
+  color: white;
+}
+
+button:hover {
+  background-color: #255a8b !important;
+  color: white;
+}
+
+.left {
+  float: left;
+}
+
+footer {
+  font-size: small;
+  padding-bottom: 1rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #3a75ad;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: #235786;
+}
+
+#mainCard {
+  max-width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#result-display {
+  max-width: 500px;
+}
+
+/* START NAV */
+
+#mainNavbar .navbar-brand {
+  font-size: 1.7rem;
+  color: #cc5c00;
+  font-weight: normal;
+}
+
+#mainNavbar .navbar-brand:hover {
+  color: #d4772a;
+}
+
+#mainNavbar .nav-link {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+
+#burger {
+  background-color: white !important;
+}
+
+#navbarNav {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#navbarNav a {
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+}
+
+#navbarNav a:hover {
+  color: #cc5c00;
+}
