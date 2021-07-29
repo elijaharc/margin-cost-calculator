@@ -4,7 +4,7 @@ const risked_amount_result = document.getElementById("risked-amount");
 const trade_amount_result = document.getElementById("trade-size");
 const margin_cost_result = document.getElementById("margin-cost");
 
-$("form").submit(function (e) {
+$("#margin-cost-calculator").submit(function (e) {
   // gets values
   let accountSize = parseFloat($("#accountSize").val());
   let leverage = parseFloat($("#leverage").val());
