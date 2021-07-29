@@ -10,6 +10,16 @@ html {
   margin-top: 2.5rem;
 }
 
+button {
+  background-color: #1c6ab3 !important;
+  color: white;
+}
+
+button:hover {
+  background-color: #3a75ad !important;
+  color: white;
+}
+
 .left {
   float: left;
 }
@@ -28,12 +38,12 @@ html {
 
 #mainNavbar .navbar-brand {
   font-size: 1.7rem;
-  color: green;
+  color: #cc5c00;
   font-weight: normal;
 }
 
 #mainNavbar .navbar-brand:hover {
-  color: rgb(0, 87, 0);
+  color: #d4772a;
 }
 
 #mainNavbar .nav-link {
