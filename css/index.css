@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 body,
 html {
   height: 100%;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
   margin: 1rem;
   margin-top: 2.2rem;
@@ -34,7 +35,7 @@ html {
   color: white;
 }
 
-button:hover {
+#submit:hover {
   background-color: #255a8b !important;
   color: white;
 }
@@ -73,7 +74,7 @@ footer {
 #mainNavbar .navbar-brand {
   font-size: 1.7rem;
   color: #cc5c00;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 #mainNavbar .navbar-brand:hover {
