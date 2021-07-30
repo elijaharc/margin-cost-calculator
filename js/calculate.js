@@ -54,12 +54,12 @@ $("#risk-calculator").submit(function (e) {
   let maxAmount = portfolioAmount * maxPortAllocation;
   let quantityOfShares = cashAtRisk / stopLoss / entryPrice;
   let cutlossPrice = entryPrice - stopLoss * entryPrice;
-  if (quantityOfShares * entryPrice > maxAmount) {
+  if (quantityOfShares * entryPrice >= maxAmount) {
     quantityOfShares = maxAmount / entryPrice;
-    $("#result-display").addClass("red-outline");
+    $("#mainCard").addClass("red-outline");
     console.log("max");
   } else {
-    $("#result-display").removeClass("red-outline");
+    $("#mainCard").removeClass("red-outline");
   }
 
   let portAllocationPercent =
