@@ -43,7 +43,7 @@ $("#margin-cost-calculator").submit(function (e) {
 // risk management
 $("#risk-calculator").submit(function (e) {
   // gets values
-  let portfolioAmount = parseFloat($("#portfolioAmount").val());
+  let portfolioAmount = parseFloat($("#portfolio-amount").val());
   let riskRatio = parseFloat($("#risk-ratio-percent").val());
   let entryPrice = parseFloat($("#entry-price").val());
   let stopLoss = parseFloat($("#stop-loss").val()) / 100;
